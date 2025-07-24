@@ -1,5 +1,5 @@
-# rails-rps
+# rps-2-rails
 
-https://rps.matchthetarget.com
+Target: https://rps.matchthetarget.com
 
 Some rights reserved — see [LICENSE.txt](LICENSE.txt)
