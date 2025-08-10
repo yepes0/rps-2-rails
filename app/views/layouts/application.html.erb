@@ -5,10 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="/icon.png">
+    <style>
+      body {
+        font-family: Arial; 
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   </head>
 
   <body>
+    <nav>
+          <ul>
+            <li>
+              <a href="/rock">
+                Play Rock
+              </a>
+            </li>
 
+            <li>
+              <a href="/paper">
+                Play Paper
+              </a>
+            </li>
+
+            <li>
+              <a href="/scissors">
+                Play Scissors
+              </a>
+            </li>
+          </ul>
+        </nav>
     <%= yield %>
   </body>
 </html>
