@@ -1,3 +1,42 @@
-<h1>Howdy now on the paper page!</h1>
 
-<%= @random_move %>
+<% if @comp_move == "rock"
+  @outcome = "won"
+elsif @comp_move == "paper"
+  @outcome = "tied"
+else
+  @outcome = "lost"
+end %>
+
+
+<h2>
+  We played paper!
+</h2>
+<h2>
+  They played  <%= @comp_move %> !
+</h2>
+
+<h2 style="color: green">
+
+<% if @outcome == "won" %>
+
+  We <%= @outcome %>!
+</h2>
+
+<% elsif @outcome == "lost" %>
+
+<h2 style="color: red">
+
+  We <%= @outcome %>!
+</h2>
+<% elsif @outcome == "tied" %>
+
+
+<h2 style="color: purple">
+
+  We <%= @outcome %>!
+</h2>
+<% end %>
+
+<a href="/">
+  Rules
+</a>
